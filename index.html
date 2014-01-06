@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" manifest="manifest.appcache">
+<head>
+  <meta charset="utf-8">
+  <title>Todo List App</title>
+
+  <link rel="stylesheet"  href="style.css" >
+    <link rel="stylesheet"  href="animations.css" >
+<!--  <link rel="stylesheet"  href="estilo.css">-->
+    
+
+    
+</head>
+<body styles = "background-color:#e3e3e3">
+    
+    
+    
+   <cont id="contenido_principal">
+    <h1 class="titulo">TODO Drag/Droop</h1>
+   
+   <items id="items">
+       <elim id="contenido_elimnar">  
+            <img border="0" src="img/eliminar.jpg" alt="Arrastra aqui para elimnar" width="40" height="40">   
+       </elim>
+        
+      <div id="page-wrapper" name="dark" >
+        <!-- Form for new Todo Items -->
+        <form id="new-todo-form" method="POST" action="#">
+            <div id="cuadro_texto">
+          <input type="text" name="new-todo" id="new-todo" placeholder="Enter a todo item..." required>
+            </div>           
+           
+        </form>
+       
+        <!-- Todo Item List -->
+        <ul id="todo-items" name="dark">
+        
+            </ul>
+      </div>
+   </items>
+     
+<!--
+       <div id="imagen_arrastrar">
+       <img id="drag1" src="http://www.w3schools.com/html/img_logo.gif" draggable="true" ondragstart="drag(event)" width="336" height="69">
+       </div>
+-->
+       
+ </cont>
+   
+  <script src="db.js"></script>
+  <script src="app.js"></script>
+</body>
+    
+    
+    
+</html>
